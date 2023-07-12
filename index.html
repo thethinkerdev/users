@@ -5,16 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/main.css">
 </head>
 
-<body class="bg-neutral-950">
+<body class="bg-neutral-100">
 
-    <div class="container mx-auto my-10 bg-neutral-900 p-3 rounded-3xl shadow-2xl shadow-rose-500">
-        <h1 class="text-4xl">Hello World</h1>
+    <div class="container mx-auto my-10">
 
+        <h1 class="title">Create User</h1>
+
+        <form id="register-form" class="flex flex-col md:flex-row  justify-center items-center text-center space-x-0 md:space-x-4 space-y-4  md:space-y-0 flex-wrap" action="" method="post">
+            <div>
+                <label class="" for="">Name</label>
+                <input type="text" class="py-1 px-3 rounded shadow text-left outline-none">
+            </div>
+            <div>
+                <label class="" for="">Email</label>
+                <input type="email" class="py-1 px-3 rounded shadow text-left outline-none">
+
+            </div>
+
+            <button class="px-3 py-1 bg-blue-500 rounded shadow text-blue-100">Create</button>
+
+
+        </form>
+
+
+        <h1 class="title">Users</h1>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center items-center content-center">
+            <div
+                class="flex flex-wrap space-x-4 space-y-4 bg-neutral-950 rounded shadow shadow-neutral-950 text-white rounded-b-xl overflow-hidden">
+
+                <div class="">
+                    <div class="flex flex-col text-center justify-center items-center space-y-4 p-20">
+                        <img class="w-20 h-20 shadow-2xl shadow-pink-500 rounded-full"
+                            src="https://avatars.githubusercontent.com/u/75409986?v=4" alt="" srcset="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo voluptatibus, adipisci eos
+                            quos
+                            est fugit mollitia? Assumenda deserunt eligendi illum dolorum nisi sequi porro debitis
+                            possimus,
+                            culpa rem eum!</p>
+                    </div>
+
+                    <div class="flex justify-center border-t border-t-purple-600 p-3 font-bold">
+                        <button
+                            class=" transition-all ease-in-out flex-1 p-3 hover:bg-blue-500 rounded-xl hover:shadow-2xl hover:shadow-blue-500 hover:text-blue-100">Edit</button>
+                        <button
+                            class=" transition-all ease-in-out flex-1 p-3 hover:bg-rose-500 rounded-xl hover:shadow-2xl hover:shadow-rose-500 hover:text-rose-100">Delete</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-    <script src="./src/index.js"></script>
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>
