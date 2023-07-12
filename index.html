@@ -20,14 +20,16 @@
 
         <h1 class="title">Create User</h1>
 
-        <form id="register-form" class="flex flex-col md:flex-row  justify-center items-center text-center space-x-0 md:space-x-4 space-y-4  md:space-y-0 flex-wrap" action="" method="post">
+        <form id="register-form"
+            class="flex flex-col md:flex-row  justify-center items-center text-center space-x-0 md:space-x-4 space-y-4  md:space-y-0 flex-wrap"
+            action="" method="post">
             <div>
-                <label class="" for="">Name</label>
-                <input type="text" class="py-1 px-3 rounded shadow text-left outline-none">
+                <label class="" for="name">Name</label>
+                <input id="name" type="text" class="py-1 px-3 rounded shadow text-left outline-none">
             </div>
             <div>
-                <label class="" for="">Email</label>
-                <input type="email" class="py-1 px-3 rounded shadow text-left outline-none">
+                <label class="" for="email">Email</label>
+                <input id="email" type="emaisl" class="py-1 px-3 rounded shadow text-left outline-none">
 
             </div>
 
@@ -39,31 +41,7 @@
 
         <h1 class="title">Users</h1>
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center items-center content-center">
-            <div
-                class="flex flex-wrap space-x-4 space-y-4 bg-neutral-950 rounded shadow shadow-neutral-950 text-white rounded-b-xl overflow-hidden">
-
-                <div class="">
-                    <div class="flex flex-col text-center justify-center items-center space-y-4 p-20">
-                        <img class="w-20 h-20 shadow-2xl shadow-pink-500 rounded-full"
-                            src="https://avatars.githubusercontent.com/u/75409986?v=4" alt="" srcset="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo voluptatibus, adipisci eos
-                            quos
-                            est fugit mollitia? Assumenda deserunt eligendi illum dolorum nisi sequi porro debitis
-                            possimus,
-                            culpa rem eum!</p>
-                    </div>
-
-                    <div class="flex justify-center border-t border-t-purple-600 p-3 font-bold">
-                        <button
-                            class=" transition-all ease-in-out flex-1 p-3 hover:bg-blue-500 rounded-xl hover:shadow-2xl hover:shadow-blue-500 hover:text-blue-100">Edit</button>
-                        <button
-                            class=" transition-all ease-in-out flex-1 p-3 hover:bg-rose-500 rounded-xl hover:shadow-2xl hover:shadow-rose-500 hover:text-rose-100">Delete</button>
-                    </div>
-
-                </div>
-            </div>
-
+            class="list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-center items-center content-center">
         </div>
     </div>
     <script src="./src/index.js" type="module"></script>
