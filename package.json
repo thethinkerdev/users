@@ -1,0 +1,17 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./assets/main.css -o ./dist/main.css",
+    "watch": "npx tailwindcss -i ./assets/main.css -o ./dist/main.css --watch",
+    "build": "npx tailwindcss -i ./assets/main.css -o ./dist/main.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
