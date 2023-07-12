@@ -21,7 +21,7 @@ elements.registerForm.addEventListener('submit', (e) => {
 
     request.storeUser(name.value, email.value).then((data) => {
 
-        cardsData.push(
+        cardsData.unshift(
             { id: data.id, name: data.name, email: data.email });
 
         cards = dom.renderCards(cardsData)
@@ -31,3 +31,5 @@ elements.registerForm.addEventListener('submit', (e) => {
         email.value = '';
     })
 })
+
+

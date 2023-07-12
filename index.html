@@ -16,6 +16,41 @@
 
 <body class="bg-neutral-100">
 
+
+    <!-- overlay -->
+    <div id="modal" class="overlay hidden fixed top-0 right-0 w-full h-full bg-neutral-950/90">
+        <div class="flex flex-col justify-center items-center w-full h-full">
+            <div class="bg-white w-full h-full max-w-[800px] max-h-[250px] rounded shadow relative">
+                <i
+                    class="close absolute left-[-5px] top-[-10px] bg-rose-100 rounded-full p-3 text-rose-500 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+
+                </i>
+                <h1 class="text-center py-2 text-4xl font-bold mb-10">ویرایش</h1>
+
+                <form action="" class="flex justify-center space-x-4">
+                    <div>
+                        <label for="name">name</label>
+                        <input id="name" class="px-3 py-1 rounded shadow outline-none" type="text">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" class="px-3 py-1 rounded shadow outline-none" type="text">
+                    </div>
+
+                </form>
+                <div class="w-full flex justify-center space-x-4 mt-10">
+                    <button class="close px-10 py-1 bg-rose-100 text-rose-500 font-bold rounded shadow">Close</button>
+                    <button class="submit px-10 py-1 bg-blue-100 text-blue-500 font-bold rounded shadow">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container mx-auto my-10">
 
         <h1 class="title">Create User</h1>
